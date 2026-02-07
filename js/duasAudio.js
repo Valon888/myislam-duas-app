@@ -164,7 +164,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Istikharah",
         category: "other",
         emoji: "🤲",
-        audioFile: "./audio/DuaforIstikharah(seekingAllah\\'sCounsel).mp3",
+        audioFile: "./audio/DuaforIstikharah-seekingAllahsCounsel.mp3",
         description: "Seeking Allah's counsel in decision making"
     }
 ];
