@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Duas - Complete Supplication Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>🤲 Islamic Duas</h1>
+                    <p class="subtitle">Complete Guide to Islamic Supplications</p>
+                </div>
+                <div class="header-controls">
+                    <button id="darkModeToggle" class="btn-icon" title="Dark Mode">
+                        <span class="icon">🌙</span>
+                    </button>
+                    <button id="favoritesToggle" class="btn-icon" title="Favorites">
+                        <span class="icon">❤️</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search & Filter Section -->
+            <div class="search-filter-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search duas by name, keyword, or category..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Duas</button>
+                    <button class="filter-tab" data-filter="by-source">By Source</button>
+                    <button class="filter-tab" data-filter="by-time">By Time</button>
+                    <button class="filter-tab" data-filter="by-situation">By Situation</button>
+                    <button class="filter-tab" data-filter="by-content">By Content</button>
+                    <button class="filter-tab" data-filter="by-days">By Days/Months</button>
+                    <button class="filter-tab" data-filter="by-emotional">By Emotion</button>
+                </div>
+            </div>
+
+            <!-- Subcategory Filter -->
+            <div class="subcategory-filter" id="subcategoryFilter" style="display: none;">
+                <div id="subcategoryButtons"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero/Info Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>The Power of Duas in Islam</h2>
+                <p>Duas are the heart of worship. The Prophet Muhammad (peace be upon him) said: "Dua is the weapon of the believer." This comprehensive guide contains authentic Islamic supplications organized by source, time, situation, and emotional state for your spiritual journey.</p>
+                <div class="info-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Authentic Duas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Dua of the Day -->
+            <section class="dua-of-day-section">
+                <h3 class="section-title">✨ Dua of the Day</h3>
+                <div id="duaOfDay" class="dua-of-day-card">
+                    <!-- Will be populated by JS -->
+                </div>
+            </section>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <label>Display Language:</label>
+                <div class="lang-buttons">
+                    <button id="langEn" class="lang-btn active" data-lang="en">English</button>
+                    <button id="langSq" class="lang-btn" data-lang="sq">Albanian (Shqipe)</button>
+                </div>
+            </div>
+
+            <!-- Duas Grid -->
+            <section class="duas-section">
+                <div id="duasGrid" class="duas-grid">
+                    <!-- Duas will be populated here -->
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No duas found matching your search. Try different keywords or filters.</p>
+                </div>
+            </section>
+
+            <!-- Audio Library Section -->
+            <section class="duas-audio-section">
+                <h3 class="section-title">🎵 Islamic Duas Audio Library</h3>
+                <p class="section-description">Listen to authentic Islamic supplications recited in Arabic with Albanian translations</p>
+                
+                <!-- Audio Filters -->
+                <div class="audio-filter-buttons">
+                    <button class="audio-filter-btn active" data-category="all">All Audio</button>
+                    <button class="audio-filter-btn" data-category="morning">Morning</button>
+                    <button class="audio-filter-btn" data-category="evening">Evening</button>
+                    <button class="audio-filter-btn" data-category="prayer">Prayer</button>
+                    <button class="audio-filter-btn" data-category="protection">Protection</button>
+                    <button class="audio-filter-btn" data-category="forgiveness">Forgiveness</button>
+                    <button class="audio-filter-btn" data-category="other">Other</button>
+                </div>
+                
+                <!-- Audio Grid -->
+                <div id="audioGrid" class="audio-grid">
+                    <!-- Audio cards will be populated here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">📖 "The greatest power in the universe is Dua (supplication). It is the weapon of the believer." - Prophet Muhammad ﷺ</p>
+                <p class="footer-credit">Islamic Duas App | Created with ❤️ for Educational & Spiritual Purposes</p>
+                <p class="footer-attribution">All duas are from authentic Islamic sources: Quran, Sahih Al-Bukhari, Muslim, Abu Dawud, At-Tirmidhi, and other authentic hadith collections.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/duasAudio.js"></script>
+</body>
+</html>

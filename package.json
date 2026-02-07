@@ -1,0 +1,61 @@
+{
+  "name": "islamic-duas-app",
+  "version": "1.0.0",
+  "description": "Complete Islamic Duas Application - Comprehensive Guide to Authentic Islamic Supplications",
+  "main": "server.js",
+  "keywords": [
+    "islam",
+    "duas",
+    "supplication",
+    "islamic",
+    "quran",
+    "hadith",
+    "prayer",
+    "adhkar",
+    "web-app"
+  ],
+  "author": "Islamic Digital Resources",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "server": "node server.js"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/islamic-duas-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/islamic-duas-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/islamic-duas-app",
+  "dependencies": {},
+  "devDependencies": {},
+  "features": [
+    "50+ Authentic Islamic Duas",
+    "8 Category Systems (Source, Time, Situation, Content, Days/Months, Emotional, Place, Form)",
+    "Advanced Search & Filtering",
+    "Dua of the Day Feature",
+    "Favorites with LocalStorage",
+    "Dark Mode Toggle",
+    "Bilingual Support (English & Albanian)",
+    "Fully Responsive Design",
+    "No External Dependencies (Pure Vanilla JS)",
+    "Keyboard Shortcuts",
+    "Copy to Clipboard Function"
+  ],
+  "categories": [
+    "By Source (Quranic, Prophetic, Personal)",
+    "By Time (Morning, Evening, After Prayer, Tahajjud)",
+    "By Situation (Travel, Home, Eating, Fear, Illness)",
+    "By Content (Istighfar, Shukr, Protection, Mercy, Guidance)",
+    "By Days & Months (Ramadan, Hajj, Friday)",
+    "By Emotional State (Sadness, Fear, Stress, Peace)",
+    "By Place (Mosque, Home, Travel, Rain, Kaaba)",
+    "By Form (Silent, Loud, Individual, Group)"
+  ]
+}
