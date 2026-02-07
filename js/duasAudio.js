@@ -137,7 +137,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Sëmundje",
         category: "other",
         emoji: "🏥",
-        audioFile: "./audio/Ruqyaf(forthecureofBlackmagic,jinnsandalltypesofsickness).mp3",
+        audioFile: "./audio/Ruqya-Healing.mp3",
         description: "Supplication for healing"
     },
     {
