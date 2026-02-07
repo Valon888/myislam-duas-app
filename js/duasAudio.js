@@ -11,7 +11,7 @@ const duasAudioLibrary = [
         titleSq: "Zikri i Mëngjesit",
         category: "morning",
         emoji: "🌅",
-        audioFile: "./audio/MorningAdhkar.mp3",
+        audioFile: "./audio/Duaasformorningandevening.mp3",
         description: "Morning remembrance and supplications"
     },
     {
@@ -20,7 +20,7 @@ const duasAudioLibrary = [
         titleSq: "Zikri i Mbrëmjes",
         category: "evening",
         emoji: "🌙",
-        audioFile: "./audio/EveningAdhkar.mp3",
+        audioFile: "./audio/Duaasformorningandevening.mp3",
         description: "Evening remembrance and supplications"
     },
     {
@@ -29,7 +29,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Hyrje në Shtëpi",
         category: "protection",
         emoji: "🏠",
-        audioFile: "./audio/DuaforEnteringHome.mp3",
+        audioFile: "./audio/Duaasforenteringandleavingthehouse.mp3",
         description: "Supplication when entering home"
     },
     {
@@ -38,7 +38,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Dalje nga Shtëpia",
         category: "protection",
         emoji: "🚪",
-        audioFile: "./audio/DuaforLeavingHome.mp3",
+        audioFile: "./audio/Duaasforenteringandleavingthehouse.mp3",
         description: "Supplication when leaving home"
     },
     {
@@ -47,7 +47,7 @@ const duasAudioLibrary = [
         titleSq: "Dua para Ngrënies",
         category: "other",
         emoji: "🍽️",
-        audioFile: "./audio/DuaBeforeEating.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Supplication before eating"
     },
     {
@@ -56,7 +56,7 @@ const duasAudioLibrary = [
         titleSq: "Dua pas Ngrënies",
         category: "other",
         emoji: "🍽️",
-        audioFile: "./audio/DuaAfterEating.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Supplication after eating"
     },
     {
@@ -65,7 +65,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Falje",
         category: "forgiveness",
         emoji: "🙏",
-        audioFile: "./audio/DuaforForgiveness.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Seeking forgiveness from Allah"
     },
     {
@@ -74,7 +74,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Mbrojtje",
         category: "protection",
         emoji: "🛡️",
-        audioFile: "./audio/DuaforProtection.mp3",
+        audioFile: "./audio/Duaasforenteringandleavingthehouse.mp3",
         description: "Seeking protection from evil"
     },
     {
@@ -83,7 +83,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Udhëzim",
         category: "other",
         emoji: "🧭",
-        audioFile: "./audio/DuaforGuidance.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Seeking guidance from Allah"
     },
     {
@@ -92,7 +92,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Durim",
         category: "other",
         emoji: "⏳",
-        audioFile: "./audio/DuaforPatience.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Seeking patience in difficulties"
     },
     {
@@ -101,7 +101,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Rizk (Mjete Jete)",
         category: "other",
         emoji: "💰",
-        audioFile: "./audio/DuaforRizq.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Seeking sustenance and blessings"
     },
     {
@@ -110,7 +110,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Fëmijë",
         category: "other",
         emoji: "👶",
-        audioFile: "./audio/DuaforChildren.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Supplication for children"
     },
     {
@@ -119,7 +119,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Martesë",
         category: "other",
         emoji: "💍",
-        audioFile: "./audio/DuaforMarriage.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Supplication for marriage"
     },
     {
@@ -128,7 +128,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Udhëtim",
         category: "other",
         emoji: "✈️",
-        audioFile: "./audio/DuaforTravel.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Supplication for safe travel"
     },
     {
@@ -137,7 +137,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Sëmundje",
         category: "other",
         emoji: "🏥",
-        audioFile: "./audio/DuaforIllness.mp3",
+        audioFile: "./audio/Ruqyaf(forthecureofBlackmagic,jinnsandalltypesofsickness.mp3",
         description: "Supplication for healing"
     },
     {
@@ -146,7 +146,7 @@ const duasAudioLibrary = [
         titleSq: "Dua për Stres & Ankth",
         category: "other",
         emoji: "😌",
-        audioFile: "./audio/DuaforStress.mp3",
+        audioFile: "./audio/DuaasfromtheQuran.mp3",
         description: "Seeking relief from stress and anxiety"
     },
     {
