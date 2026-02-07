@@ -197,6 +197,30 @@ function renderAudioCards(filter = 'all') {
         : duasAudioLibrary.filter(audio => audio.category === filter);
 
     audioGrid.innerHTML = filteredAudios.map(audio => createAudioCard(audio)).join('');
+    
+    // Add event listeners to buttons
+    audioGrid.querySelectorAll('.audio-play-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const audioFile = this.dataset.file;
+            playAudio(audioFile, this);
+        });
+    });
+    
+    audioGrid.querySelectorAll('.audio-download-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const audioFile = this.dataset.file;
+            const title = this.dataset.title;
+            downloadAudio(audioFile, title);
+        });
+    });
+    
+    audioGrid.querySelectorAll('.audio-share-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const audioFile = this.dataset.file;
+            const title = this.dataset.title;
+            shareAudio(title, audioFile);
+        });
+    });
 }
 
 /**
@@ -206,21 +230,21 @@ function createAudioCard(audio) {
     const title = state.currentLanguage === 'sq' ? audio.titleSq : audio.titleEn;
     
     return `
-        <div class="audio-card" data-id="${audio.id}">
+        <div class="audio-card" data-id="${audio.id}" data-audio-file="${audio.audioFile.replace(/"/g, '&quot;')}">
             <div class="audio-header">
                 <div class="audio-icon">${audio.emoji}</div>
                 <h4 class="audio-title">${title}</h4>
             </div>
             <p class="audio-description">${audio.description}</p>
             <div class="audio-controls">
-                <button class="audio-play-btn" onclick="playAudio('${audio.audioFile}', this)">
+                <button class="audio-play-btn" data-file="${audio.audioFile.replace(/"/g, '&quot;')}">
                     <span class="play-icon">▶️</span>
                     <span class="play-text">Play</span>
                 </button>
-                <button class="audio-download-btn" onclick="downloadAudio('${audio.audioFile}', '${title}')">
+                <button class="audio-download-btn" data-file="${audio.audioFile.replace(/"/g, '&quot;')}" data-title="${title.replace(/"/g, '&quot;')}">
                     <span class="download-icon">⬇️</span>
                 </button>
-                <button class="audio-share-btn" onclick="shareAudio('${title}', '${audio.audioFile}')">
+                <button class="audio-share-btn" data-file="${audio.audioFile.replace(/"/g, '&quot;')}" data-title="${title.replace(/"/g, '&quot;')}">
                     <span class="share-icon">📤</span>
                 </button>
             </div>
